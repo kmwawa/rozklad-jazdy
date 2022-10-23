@@ -249,5 +249,57 @@ li2:hover {
 
 
 
-</style>
+</style><?php 	$homepage = file_get_contents("https://api.um.warszawa.pl/api/action/dbtimetable_get/?id=e923fa0e-d96c-43f9-ae6e-60518c9f3238&busstopId=7099&busstopNr=01&line=zm1&apikey=eb6e7232-e652-473c-9fa6-5492e4c8e9b6");;
+
+//echo $homepage;
+if($homepage)
+
+
+$dane = json_decode($homepage,false);
+		//print_r($dane);
+		for($i=0;$i<sizeof($dane->result);$i++)
+		
+		{
+	     echo     "<c>"."<table>"."<tr>"."<td>";
+			
+			 echo  "<m>"."<b>".
+			$dane->result[$i]->values[2]->value."/"."</m>"."</b>"."<v>"."<b>ZM1</b>"."</v>"."</td>"."<td>";
+	 echo  "➔"."&nbsp;".
+			 $dane->result[$i]->values[3]->value."&nbsp;"."<br>";
+	echo     "<v1>"."<b>".
+			$dane->result[$i]->values[5]->value."</b>"."</v1>"."</td>"."</tr>"."</table>"."</c>";
+		}
+		
+	?>	
+		
+<?php
+$godzina=date('G');
+$minuta=date('i');
+$sekunda=date('s');
+ 
+?>
+<script>
+g=<?php echo $godzina; ?>;
+m=<?php echo $minuta; ?>;
+s=<?php echo $sekunda; ?>;
+ 
+ 
+function Mhm() {
+s++;
+if (s == 60) {
+s=00;
+m++;
+}
+if (m == 60) {
+m=00;
+g++;
+}
+if (g == 24) {
+g=00;
+}
+zm = document.getElementById("e");
+zm.innerHTML = g + ":" + m + ":" + s + "";
+}
+window.setInterval('Mhm()',1000);
+</script>
 </body></html>
