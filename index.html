@@ -302,4 +302,92 @@ zm.innerHTML = g + ":" + m + ":" + s + "";
 }
 window.setInterval('Mhm()',1000);
 </script>
+	
+	<?php
+// Ten plik jest częścią Moodle - https://moodle.org/
+//
+// Moodle to darmowe oprogramowanie: możesz je rozpowszechniać i/lub modyfikować
+// zgodnie z warunkami Powszechnej Licencji Publicznej GNU opublikowanej przez
+// Free Software Foundation, wersja 3 licencji lub
+// (do wyboru) dowolna nowsza wersja.
+//
+// Moodle jest rozpowszechniany z nadzieją, że będzie przydatny,
+// ale BEZ ŻADNEJ GWARANCJI; nawet bez dorozumianej gwarancji
+// SPRZEDAWALNOŚĆ lub PRZYDATNOŚĆ DO OKREŚLONEGO CELU. Zobacz
+// Powszechna Licencja Publiczna GNU, aby uzyskać więcej informacji.
+//
+// Powinieneś otrzymać kopię Powszechnej Licencji Publicznej GNU
+// wraz z Moodle. Jeśli nie, zobacz <https://www.gnu.org/licenses/>.
+
+/**
+* Automatycznie generowane ciągi dla instalatora Moodle
+*
+* Nie edytuj tego pliku ręcznie! Zawiera tylko podzbiór ciągów
+* potrzebne w pierwszych krokach instalacji. Ten plik był
+* generowane automatycznie przez export-installer.php (który jest częścią AMOS
+* {@link http://docs.moodle.org/dev/Languages/AMOS}) przy użyciu
+* lista ciągów znaków zdefiniowanych w /install/stringnames.txt.
+*
+* @instalator pakietu
+* @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 lub nowsza
+*/
+
+zdefiniowany( 'MOODLE_INTERNAL' ) || umierać();
+
+$ string [ 'admindirname' ] = 'Administrator katalogu' ;
+$ string [ 'availablelangs' ] = 'Dostępne paczki językowe' ;
+$ string [ 'chooselanguagehead' ] = 'Wybierz język' ;
+$ string [ 'chooselanguagesub' ] = 'Proszę wybrać język do zadania. Dziesięć języków będzie również używany jako usługa językowa, przy czym może być również jako jako.' ;
+$ string [ 'clialreadyconfigured' ] = 'Plik config.php już istnieje. Użyj admin/cli/install_database.php jeśli chcesz zainstalować aplikację dla tej strony.' ;
+$ string [ 'clialreadyinstalled' ] = 'Plik config.php już istnieje. Użyj admin/cli/install_database.php Jeśli chcesz użyć Moodle dla tej strony.' ;
+$ string [ 'cliinstallheader ] = 'Program złoty' Moodle {$a} z linii' ;
+$ string [ 'clitablesist' ] = 'Tabela danych już teraz, instalacja nie bazy danych.' ;
+$ string [ 'databasehost' ] = 'Host bazy danych' ;
+$ string [ 'databasename' ] = 'Nazwa bazy danych' ;
+$ string [ 'databasetypehead' ] = 'Wybierz sterownik bazy danych' ;
+$ string [ 'dataroot' ] = 'Katalog danych' ;
+$ string [ 'datarootpermission' ] = 'Prawa katalogów danych' ;
+$ string [ 'dbprefix' ] = 'Tabela prefiksów' ;
+$ string [ 'dirroot' ] = 'Katalog Moodle' ;
+$ string [ 'environmenthead' ] = 'Sprawdzam środowisko (ustawienia) ...' ;
+$ string [ ' środowisko2' ] Pełna kontrola aktualizuje się przed każdą instalacją i aktualizacją. Prosimy o kontakt z administratorem serwera, jeśli nie wiesz jak nową wersję lub uruchomienie serwera PHP.' ;
+$ string [ 'errorsinenvironment' ] = 'Kontrola środowiska zakończenia niepowodzeniem!' ;
+$ string [ 'instalacja' ] = 'Instalacja' ;
+$ string [ 'langdownloaderror' ] = 'Niestety język "{$a}" nie może zostać zakończona. Proces instalacji będzie obecny w języku angielskim. ;
+$ string [ 'memorylimithelp' ] = '<p>Ograniczenie pamięci PHP dla Twojego serwera jest obecnie na {$a}.</p>
+<p> Może to stworzyć, w której Moodle będzie miał w przyszłości problemy z pamięcią, zwłaszcza jeśli masz dostęp do wielu i/lub wielu użytkowników.</p>
+<p możliwe, aby możliwe, tworzenie konfiguracji, jeśli PHP zwystąpiło np. 40M.
+[Istnieje kilka sposobów tej operacji, których możesz mieć:</p>
+<ol>
+<li>Jeśli możesz przekompilować PHP za pomocą <i>--enable-memory-limit</i>.
+instrukcja do Moodle wybór samoczynnie limit pamięci.</li>
+<li>Jeśli masz dostęp do konfiguracji konfiguracyjnej php.ini, możesz mieć w takim zakresie jeden <b>pamięć_limit</b> do wielkości np. 40M. W przypadku, gdy nie posiadasz dostępu dla Ciebie, możesz stworzyć
+<li>Na niektórych serwerach PHP można stworzyć plik. htaccess w Moodle planowany poniższą koszulkę:
+<blockquote><div>php_value memory_limit 40M</div></blockquote>
+<p>Jednakże na niektórych warstwach będzie uniemożliwiać dostęp do <b>wszystkich stron PHP na niektórych warstwach.
+</ol>' ;
+$ string [ 'ścieżki' ] = 'Ścieżki' ;
+$ string [ 'pathserrcreatedataroot' ] 'Katalog {$a->data}) nie może danych (użytkowanie przez instalatora).' ;
+$ string [ 'pathshead' ] = 'Postępowanie ścieżki' ;
+$ string [ 'pathsrodaroot' ] = 'Główny katalog danych nie ma zapisu do zapisu. ' ;
+$ string [ 'pathsroparentdataroot' ] = 'Nadrzędny katalog ({$a->parent}) jest tylko stary. Katalog danych {$a-> data} nie może zostać użytkownika przez instalatora. ' ;
+$ string [ 'pathssubaddir' ] = 'Nieliczne portalmine URL /admin jako specjalny panel panelu sterowania. Niestety jest to strona Moodle. Można będzie przejść przez zmianę nazwy referem, będzie w sesji i zostanie nazwana tu.: <em>odstawa admin.</> Linki Moodle automatycznie poprawione.' ;
+$ string [ 'pathssubdataroot' ] = 'Potrzebny jest obszar, gdzie Moodle może zapisywać ładowane do niego pliki. Katalog ten miałby mieć prawo do odczytania w ZAPISU przez użytkownika serwera WWW, ale może być dostępny bezpośrednio przez sieć. Instalator powziąć powstanie, jeśli nie istnieje. ;
+$ string [ 'pathssubdirroot' ] = 'Pełna ścieżka do katalogu z instalacją'. ;
+$ string [ 'pathssubwwwroot' ] = 'Pełny adres internetowy, pod którym Moodle będzie dostępny. Moodle nie może być dostępna przy użyciu wielu adresów. Jeśli twoja witryna ma kilka adresów, należy reklamować się na miejscu z jednego adresu. Jeśli Twoja witryna jest twoją własnością z intranetem, korzystaj z publicznych i Internetu tak, aby też poruszał się w adresie adresu. Jeśli adres nie jest poprawny, należy wybrać inną opcję z innym adresem.' ;
+$ string [ 'pathsunsecuredataroot' ] = 'Lokalizacja katalogu danych danych nie jest bezpieczna' ;
+$ string [ 'pathswrongadmindir' ] = 'Administrator katalogu nie istnieje' ;
+$ string [ 'phpextension' ] = 'rozszerzenie PHP {$a}' ;
+$ string [ 'phpversion' ] = 'Wersja PHP' ;
+$ string [ 'phpversionhelp' ] = '<p>Moodle wymaga wersji PHP co 5.6.5 lub 7.1 (7.0.x ma pewne specjalne silnika).</p>
+<p>Aktualnie wersji {$a}.</p>
+<p>Musisz PHP lub. na host z nowszą wersją PHP</p>” ;
+$ string [ 'welcomep10' ] = '{$a->nazwa_instalatora} ({$a->wersja_instalatora})' ;
+$ string [ 'welcomep20' ] = 'Widzisz tę stronę, ponieważ z powodzeniem instalowałeś i uruchomiłeś <strong>{$a->packname} {$a->packversion}</strong> na swoim przy komputerze. ;
+$ string [ 'welcomep30' ] = 'Dziesięć instalatorów <strong>{$a->nazwa instalatora}</strong> zawiera aplikacje, które tworzą środowisko, w którym będzie działać <strong>Moodle</strong>, czyli' ;
+$ string [ 'welcomep40' ] = 'Pakiet zawiera <strong>Moodle {$a->moodlerelease} ({$a->moodleversion})</strong>.' ;
+$ string [ 'welcomep50' ] = 'Wszystkie aplikacje w tym momencie własne, udostępnienie licencji. Kompletny pakiet <strong>{$a->nazwa instalatora}</strong> jest <a href="http://www.opensource.org/docs/definition_plain.html">open source</a> i jest dystrybuowany na < a href="http://www.gnu.org/copyleft/gpl.html">GPL</a> licencji.' ;
+$ string [ 'welcomep60' ] = 'Nastepujące strony przeprowadzą cię przez użytkownika <strong>Moodle</strong> na twoim komputerze. Możesz ustawić je, ustawiasz, lubie, zależnie od potrzeb. ;
+$ string [ 'welcomep70' ] = 'Kliknij "Dalej" żeby przycisk wejście <strong>Moodle>.' ;
+$ string [ 'wwwroot' ] = 'Adres w sieci' ;
 </body></html>
